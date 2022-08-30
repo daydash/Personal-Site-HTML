@@ -1,0 +1,134 @@
+/* selector { property : value; } */
+/* Who? { What? : How?; } */
+
+/* selector {
+    property 1 : value 1;
+    property 2 : value 2;
+    property 3 : value 3;
+    property 4 : value 4;
+} */
+
+/* Arrange the properties in ascending alphabetical order for better debugging */
+
+/* **************************** TAG SELECTORS **************************** */
+body {
+	background-color: #eaf6f6;
+}
+
+hr {
+	background-color: white;
+	/* border-style: dotted none none none; */
+	border-style: none;
+	border-top-style: dotted;
+	border-color: grey;
+	border-width: 5px;
+	width: 5%;
+	background-color: #eaf6f6;
+}
+/* NOTE: Here the properties in selector 'hr' are not in any order, which is not preferable*/
+
+img {
+	height: 400px;
+	width: 400px;
+	/* Can use width: 35%; for 35% of the total pixel size */
+}
+
+h1 {
+	color: #66bfbf;
+}
+
+h3 {
+	color: #66bfbf;
+}
+
+/* **************************** CLASS SELECTORS **************************** */
+
+/* .modifyH3 {
+	background-color: rgb(101, 161, 249);
+	color: red;
+}
+
+.test {
+	background-color: black;
+	color: orange;
+} */
+
+/* Here SKILLS heading have two classes named, "modifyH3" and "test", and then later one will get the higher priority */
+
+/* **************************** ID SELECTORS **************************** */
+
+/* #skills {
+	background-color: orchid;
+} */
+
+/* An ID is always unique to one instance only on one page, i.e;
+        No two tags (even of same category) can not have same IDs
+        No unique tag can't have two or more IDs
+*/
+
+/* **************************** CLASS vs ID **************************** */
+
+/* There can be more than one tag with the same class name,
+But the ID is unique to one and only one specific tag occurance.
+
+Like there are 3 h3 tags on index.html:
+
+// Selectors
+h3 tag :
+    Education
+    My Schedule
+    Skills
+
+// Class
+.modifyH3 :
+    My Schedule
+    Skills
+
+// ID
+#mySchedule :
+    My Schedule
+
+#skills :
+    Skills */
+
+/* **************************** PRECEDENCE **************************** */
+
+/* 
+1. style attribute
+
+2. internal css
+
+3. extenal css
+*/
+
+/* **************************** PRECEDENCE **************************** */
+
+/* 
+1. ID
+
+2. CLASS
+
+3. Tag Selector
+*/
+
+/* **************************** PSEUDO-CLASS **************************** */
+
+h1:hover {
+	color: orange;
+}
+
+h3:hover {
+	color: gold;
+}
+
+p:hover {
+	color: brown;
+}
+
+a:hover {
+	color: red;
+}
+
+img:hover {
+	border-radius: 50%;
+}

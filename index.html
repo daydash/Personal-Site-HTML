@@ -6,7 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Yash's Personal Site</title>
 
-		<style>
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<!-- <style>
 			body {
 				background-color: #eaf6f6;
 			}
@@ -27,7 +29,7 @@
 				width: 400px;
 				/* Can use width: 35%; for 35% of the total pixel size */
 			}
-		</style>
+		</style> -->
 	</head>
 
 	<body>
@@ -65,7 +67,7 @@
 			<li><a href="https://www.mitmoradabad.edu.in/">MIT Moradabad</a></li>
 		</ul>
 		<hr />
-		<h3>My Schedule</h3>
+		<h3 class="modifyH3" id="mySchedule">My Schedule</h3>
 		<table cellspacing="10">
 			<thead>
 				<tr>
@@ -75,15 +77,15 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td>10am - 1pm</td>
+					<td>10:00am - 1:00pm</td>
 					<td>Chill</td>
 				</tr>
 				<tr>
-					<td>2pm</td>
+					<td>2:00pm</td>
 					<td>Lunch</td>
 				</tr>
 				<tr>
-					<td>3pm - 5pm</td>
+					<td>3:00pm - 5:00pm</td>
 					<td>Learn</td>
 				</tr>
 				<tr>
@@ -93,7 +95,9 @@
 			</tbody>
 		</table>
 		<hr />
-		<h3>Skills</h3>
+		<h3 class="modifyH3 test" id="skills">Skills</h3>
+		<!-- two class named "modifyH3" and "test" -->
+		<!-- can not have two IDs, ID is limited to one instance on a single page -->
 		<table border="2" cellspacing="10">
 			<tr>
 				<td>
