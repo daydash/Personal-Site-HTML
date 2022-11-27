@@ -111,6 +111,18 @@ h3 tag :
 3. Tag Selector
 */
 
+/* **************************** PRECEDENCE **************************** */
+
+/* 
+1. style attribute inside tags -> like, <body style="" ></body>
+
+2. #id -> like, #title
+
+3. .class -> like, .container
+
+4. tag -> like, h1{}
+*/
+
 /* **************************** PSEUDO-CLASS **************************** */
 
 h1:hover {
@@ -132,3 +144,35 @@ a:hover {
 img:hover {
 	border-radius: 50%;
 }
+
+/* **************************** Combining Selectors **************************** */
+
+/* 
+1. Multiple Selectors
+
+selector1, selector2 {
+
+}
+
+2. Hierarchial Selecotrs
+
+parentSelector childSelector {
+
+}
+
+
+3. Combined Selector (without space between the selectors)
+
+selector1.selector2{
+
+}
+
+selector1#selector2{
+	
+}
+
+#selector1.selector2{
+	
+}
+
+*/
