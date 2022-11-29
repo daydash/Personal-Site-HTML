@@ -155,6 +155,10 @@ selector1, selector2 {
 }
 
 2. Hierarchial Selecotrs
+In this the selectors should be in the hierarchial order,...
+<div class="container"><h1 class="title"></h1></div> can be targetted as...
+.container .title {}
+
 
 parentSelector childSelector {
 
@@ -162,6 +166,11 @@ parentSelector childSelector {
 
 
 3. Combined Selector (without space between the selectors)
+In this the selectors should be in the same line,...
+<div class="container"><h1 class="title"></h1></div> can be targetted as...
+h1.title{}
+or
+div.container{}
 
 selector1.selector2{
 
@@ -175,4 +184,8 @@ selector1#selector2{
 	
 }
 
+
+
+NOTE : <div class="container"><h1 class="title"></h1></div>
+.container.title{} will not work as they are at different levels.
 */
